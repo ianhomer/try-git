@@ -5,10 +5,19 @@ Try git
 Make conflicts
 
     ./make-conflicts.sh
-    git pull origin feature/conflicting
+
+Then pull conflicts into feature branch
+
+    git checkout feature/conflicting
+    git pull origin master
 
 Resolve by fixing merges in files/conflictable.txt
 
     git commit -am "Resolve conflicts"
 
+Merge feature branch to master
 
+    git checkout master
+    git merge feature/conflicting
+    git branch -d feature/conflicting
+    git push origin --delete feature/conflicting
