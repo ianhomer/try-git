@@ -19,7 +19,6 @@ Squash commits
     git rebase -i [SHA]
     git push origin experiment/change --force
 
-
 Merge to master
 
     git checkout master
