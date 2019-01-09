@@ -20,8 +20,9 @@ function makeChange {
   heading=${2:-${HEADING}}
   stamp=${STAMP:-.}
   branch=`git rev-parse --abbrev-ref HEAD`
-  echo "${heading} : ${branch} ${stamp} ${DATE}" >> $1
-  git commit -am "${heading} : ${DATE}"
+  message="${heading} : ${branch} ${stamp} ${DATE}"
+  echo "${message}" >> $1
+  git commit -am "${message}"
   git push
 }
 
