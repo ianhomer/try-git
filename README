@@ -23,8 +23,13 @@ Then rebase against master
 Merge to master
 
     git checkout master
-    git merge branchName
+    git merge experiment/change
     git push origin master
+
+Clean up old branch
+
+    git branch -d experiment/change
+    git push origin --delete experiment/change
 
 # Conflict Experiments
 

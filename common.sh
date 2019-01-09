@@ -33,9 +33,8 @@ function heading {
 }
 
 function apply {
-  documentation=${1:-${DOCUMENTATION}}
+  documentation=${2:-${DOCUMENTATION}}
   echo
-  echo $2
   echo "$1"
   echo
   if [[ ! -z "${documentation}" ]] ; then
