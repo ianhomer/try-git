@@ -12,7 +12,7 @@ function checkout {
 }
 
 function getTime {
-  date '%H:%M:%S'
+  date '+%H%M%S'
 }
 
 function makeChange {
