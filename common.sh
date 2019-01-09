@@ -23,7 +23,6 @@ function heading {
   documentation=${1:-DOCUMENTATION}
   echo $1 > ${documentation}
   echo >> ${documentation}
-  return $1
 }
 
 function apply {
