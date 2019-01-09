@@ -13,14 +13,15 @@ function checkout {
 
 function makeChange {
   DATE=`date '+%Y-%m-%d %H:%M:%S'`
-  echo "Change ${DATE}" >> $1
+  echo "$HEADING : Change ${DATE}" >> $1
   git commit -am "Change ${DATE}"
   git push
 }
 
-function label {
+function heading {
   echo $1 > $2
   echo >> $2
+  return $1
 }
 
 function apply {

@@ -4,9 +4,8 @@
 
 file=files/change.txt
 branch=experiment/change
-documentation=documentation/make-change.md
-
-label "Make Change" ${documentation}
+DOCUMENTATION=documentation/make-change.md
+HEADING=`heading "Make Change"`
 
 checkout ${branch}
 

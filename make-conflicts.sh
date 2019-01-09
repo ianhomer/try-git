@@ -6,7 +6,7 @@ file=files/conflictable.txt
 branch=experiment/conflicting
 documentation=documentation/make-conflicts.md
 
-label "Make Conflicts" ${documentation}
+heading "Make Conflicts" ${documentation}
 
 checkout ${branch}
 makeChange
