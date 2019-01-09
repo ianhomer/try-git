@@ -20,7 +20,7 @@ function makeChange {
 }
 
 function heading {
-  documentation=${2:-DOCUMENTATION}
+  documentation=${2:-${DOCUMENTATION}}
   echo $1 > ${documentation}
   echo >> ${documentation}
 }
