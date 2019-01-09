@@ -6,11 +6,14 @@ Make change
 
     ./make-change.sh
 
-Then rebase
+Squash commits
 
     git checkout experiment/change
     git log --graph --decorate --pretty=oneline --abbrev-commit -n 10
     git rebase -i [SHA]
+    git push origin experiment/change --force
+
+Then rebase against master
 
 # Conflict Experiments
 
