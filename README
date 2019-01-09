@@ -1,1 +1,8 @@
 Try git
+
+# Conflict Experiments
+
+Make conflicts
+
+    ./make-conflicts.sh
+    
