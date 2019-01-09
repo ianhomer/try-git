@@ -11,10 +11,16 @@ function checkout {
   fi
 }
 
+function getTime {
+  echo date '%H:%M:%S'
+}
+
 function makeChange {
   DATE=`date '+%Y-%m-%d %H:%M:%S'`
   heading=${2:-${HEADING}}
-  echo "${heading} : ${DATE}" >> $1
+  stamp=${STAMP:-.}
+  branch=`git rev-parse --abbrev-ref HEAD`
+  echo "${heading} : ${branch} ${stamp} ${DATE}" >> $1
   git commit -am "${heading} : ${DATE}"
   git push
 }
