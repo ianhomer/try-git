@@ -9,8 +9,7 @@ Make change
 Then rebase
 
     git checkout experiment/change
-
-
+    git log --graph --decorate --pretty=oneline --abbrev-commit
 
 # Conflict Experiments
 
