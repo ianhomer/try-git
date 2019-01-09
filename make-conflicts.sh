@@ -1,7 +1,7 @@
 #!/bin/bash
 
 file=files/conflictable.txt
-branch=feature/conflicting
+branch=experiment/conflicting
 
 function makeChange {
   DATE=`date '+%Y-%m-%d %H:%M:%S'`

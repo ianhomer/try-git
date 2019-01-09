@@ -8,7 +8,7 @@ Make conflicts
 
 Then pull conflicts into feature branch
 
-    git checkout feature/conflicting
+    git checkout experiment/conflicting
     git pull origin master
 
 Resolve by fixing merges in files/conflictable.txt
@@ -18,6 +18,6 @@ Resolve by fixing merges in files/conflictable.txt
 Merge feature branch to master
 
     git checkout master
-    git merge feature/conflicting
-    git branch -d feature/conflicting
-    git push origin --delete feature/conflicting
+    git merge experiment/conflicting
+    git branch -d experiment/conflicting
+    git push origin --delete experiment/conflicting
