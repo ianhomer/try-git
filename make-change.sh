@@ -6,7 +6,7 @@ file=files/change.txt
 branch=experiment/change
 documentation=documentation/make-change.md
 
-label "Make Change"
+label "Make Change" ${documentation}
 
 checkout ${branch}
 
