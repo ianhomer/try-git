@@ -1,5 +1,17 @@
 Try git
 
+# Rebase Experiments
+
+Make change
+
+    ./make-change.sh
+
+Then rebase
+
+    git checkout experiment/conflicting
+
+
+
 # Conflict Experiments
 
 Make conflicts
