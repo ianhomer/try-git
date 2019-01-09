@@ -13,8 +13,7 @@ function checkout {
 
 function makeChange {
   DATE=`date '+%Y-%m-%d %H:%M:%S'`
-  heading=${2:-HEADING}
-  echo "HEADING = ${heading}"
+  heading=${2:-${HEADING}}
   echo "${heading} : Change ${DATE}" >> $1
   git commit -am "${heading} : Change ${DATE}"
   git push
@@ -28,7 +27,7 @@ function heading {
 }
 
 function apply {
-  documentation=${1:-DOCUMENTATION}
+  documentation=${1:-${DOCUMENTATION}}
   echo
   echo $2
   echo "$1"
