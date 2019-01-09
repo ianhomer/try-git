@@ -19,14 +19,11 @@ Squash commits
     git rebase -i [SHA]
     git push origin experiment/change --force
 
-Merge to master
+Merge to master and clean up old branch, as per PR merge
 
     git checkout master
     git merge experiment/change
     git push origin master
-
-Clean up old branch
-
     git branch -d experiment/change
     git push origin --delete experiment/change
 
