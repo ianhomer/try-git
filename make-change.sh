@@ -7,7 +7,7 @@ HEADING="Make Change"
 file=files/change.txt
 branch=experiment/change
 DOCUMENTATION=documentation/make-change.md
-heading ${HEADING}
+heading "${HEADING}"
 
 checkout ${branch}
 
