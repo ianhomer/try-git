@@ -9,7 +9,8 @@ Make change
 Then rebase
 
     git checkout experiment/change
-    git log --graph --decorate --pretty=oneline --abbrev-commit
+    git log --graph --decorate --pretty=oneline --abbrev-commit -n 10
+    git rebase -i [SHA]
 
 # Conflict Experiments
 
