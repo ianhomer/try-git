@@ -1,11 +1,12 @@
 #!/bin/bash
 
+HEADING="Make Change"
+
 . ./common.sh
 
 file=files/change.txt
 branch=experiment/change
 DOCUMENTATION=documentation/make-change.md
-HEADING="Make Change"
 heading ${HEADING}
 
 checkout ${branch}
