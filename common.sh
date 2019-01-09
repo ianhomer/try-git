@@ -12,7 +12,7 @@ function checkout {
 }
 
 function getTime {
-  echo date '%H:%M:%S'
+  date '%H:%M:%S'
 }
 
 function makeChange {
