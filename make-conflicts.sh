@@ -4,9 +4,9 @@
 
 file=files/conflictable.txt
 branch=experiment/conflicting
-documentation=documentation/make-conflicts.md
+DOCUMENTATION=documentation/make-conflicts.md
 
-heading "Make Conflicts" ${documentation}
+heading "Make Conflicts"
 
 checkout ${branch}
 makeChange
