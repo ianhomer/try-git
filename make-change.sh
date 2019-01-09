@@ -1,8 +1,9 @@
 #!/bin/bash
 
 HEADING="Make Change"
-
 . ./common.sh
+
+STAMP=`getTime`
 
 file=files/change.txt
 branch=experiment/change
