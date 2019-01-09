@@ -1,1 +1,12 @@
 Try git
+
+# Conflict Experiments
+
+Make conflicts
+
+    ./make-conflicts.sh
+    git pull origin feature/conflicting
+
+Resolve by fixing merges in files/conflictable.txt
+
+
