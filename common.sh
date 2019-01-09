@@ -20,5 +20,5 @@ function apply {
   if [[ ! -z "$2" ]] ; then
     echo "    $1" >> ${documentation}
   fi
-  exec $1
+  $1
 }
