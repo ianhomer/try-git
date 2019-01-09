@@ -9,4 +9,6 @@ Make conflicts
 
 Resolve by fixing merges in files/conflictable.txt
 
+    git commit -am "Resolve conflicts"
+
 
