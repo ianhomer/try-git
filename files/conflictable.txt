@@ -18,3 +18,4 @@ File to experiment with conflicts
 2019-01-09 18:51:53
 Change 2019-01-09 18:52:44
 Change 2019-01-09 18:52:46
+Change 2019-01-09 18:52:47
