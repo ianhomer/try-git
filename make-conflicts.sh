@@ -4,6 +4,9 @@
 
 file=files/conflictable.txt
 branch=experiment/conflicting
+documentation=documentation/make-conflicts.md
+
+label "Make Conflicts"
 
 if [[ `git branch -a | grep -c ${branch}` -eq 0 ]] ; then
   echo "Creating branch ${branch}"
