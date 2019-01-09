@@ -16,7 +16,8 @@ checkout ${branch}
 # Branch changes
 makeChange ${file}
 makeChange ${file}
-makeChange ${file}
+makeChange ${file} "fixup!"
+makeChange ${file} "squash!"
 
 # Non-conflicting change
 git checkout master
