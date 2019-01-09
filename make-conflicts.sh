@@ -3,6 +3,13 @@
 file=files/conflictable.txt
 branch=feature/conflicting
 
+function makeChange {
+  DATE=`date '+%Y-%m-%d %H:%M:%S'`
+  echo "Change ${DATE}" >> ${file}
+  git commit -am "Change ${DATE}"
+  git push
+}
+
 if [[ `git branch -a | grep -c ${branch}` -eq 0 ]] ; then
   echo "Creating branch ${branch}"
   git checkout -b feature/conflicting
@@ -12,7 +19,8 @@ else
   git checkout feature/conflicting
 fi
 
-DATE=`date '+%Y-%m-%d %H:%M:%S'`
-echo "Change ${DATE}" >> ${file}
-git commit -am "Change ${DATE}"
-git push
+makeChange
+
+git checkout master
+makeChange
+
