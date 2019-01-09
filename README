@@ -6,6 +6,12 @@ Make change
 
     ./make-change.sh
 
+Rebase off master
+
+    git fetch
+    git checkout experiment/change
+    git rebase master
+
 Squash commits
 
     git checkout experiment/change
@@ -13,12 +19,6 @@ Squash commits
     git rebase -i [SHA]
     git push origin experiment/change --force
 
-Then rebase against master
-
-    git checkout master
-    git pull origin master
-    git checkout experiment/change
-    git rebase master
 
 Merge to master
 
