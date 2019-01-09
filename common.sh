@@ -6,3 +6,19 @@ function makeChange {
   git commit -am "Change ${DATE}"
   git push
 }
+
+function label {
+  echo $1 > $2
+  echo >> $2
+}
+
+function apply {
+  echo
+  echo $2
+  echo "$1"
+  echo
+  if [[ ! -z "$2" ]] ; then
+    echo "    $1" >> ${documentation}
+  fi
+  exec $1
+}
