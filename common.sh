@@ -14,8 +14,8 @@ function checkout {
 function makeChange {
   DATE=`date '+%Y-%m-%d %H:%M:%S'`
   heading=${2:-${HEADING}}
-  echo "${heading} : Change ${DATE}" >> $1
-  git commit -am "${heading} : Change ${DATE}"
+  echo "${heading} : ${DATE}" >> $1
+  git commit -am "${heading} : ${DATE}"
   git push
 }
 
