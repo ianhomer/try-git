@@ -16,7 +16,7 @@ Squash commits
 
     git checkout experiment/change
     git log --graph --decorate --pretty=oneline --abbrev-commit -n 20
-    git rebase -i --autosquash [SHA]
+    git rebase -i [SHA]
     git push origin experiment/change --force
 
 Merge to master
