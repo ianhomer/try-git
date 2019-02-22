@@ -8,8 +8,8 @@ Make change
 
 Rebase off master so that commits as if replayed on top of latest master :
 
-    git fetch
     git checkout experiment/change
+    git fetch origin master:master
     git rebase master
 
 And then squash commits, by choosing which commits you want to squash (or fixup) into single commit :
